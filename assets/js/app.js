@@ -366,7 +366,7 @@ class TimelineRenderer {
             duration: 0.5,
             delay: 1.4 + (index * 0.1),
             ease: 'back.out(1.7)',
-            transformOrigin: `${x}px ${y}px`
+            svgOrigin: `${x} ${y}`
         });
     }
 }
