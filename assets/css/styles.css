@@ -281,16 +281,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: var(--header-height);
     min-height: calc(100vh - var(--header-height));
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: var(--space-8);
     padding-left: 220px;
+    padding-top: var(--space-12);
 }
 
 .timeline-svg {
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
+    width: 400px;
+    height: 800px;
     opacity: 0;
     animation: fadeIn 0.8s var(--ease-out) 0.6s forwards;
 }
@@ -344,12 +344,25 @@ h1, h2, h3, h4, h5, h6 {
     fill: white;
 }
 
+.decade-marker-ring {
+    fill: none;
+    stroke: var(--color-navy);
+    stroke-width: 2;
+    stroke-dasharray: 4 4;
+    opacity: 0.4;
+}
+
+.decade-marker:hover .decade-marker-ring {
+    opacity: 0.7;
+    stroke-dasharray: none;
+}
+
 .decade-theme-text {
     fill: var(--color-text-secondary);
     font-family: var(--font-body);
     font-size: 13px;
     font-weight: 600;
-    text-anchor: middle;
+    text-anchor: start;
     pointer-events: none;
 }
 
@@ -358,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-body);
     font-weight: 600;
     fill: var(--color-text-tertiary);
-    text-anchor: middle;
+    text-anchor: start;
 }
 
 /* ========== DECADE NAVIGATION ========== */
