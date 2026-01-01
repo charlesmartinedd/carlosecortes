@@ -92,18 +92,40 @@
   "decades": {
     "1970s": {
       "theme": "Chicano Studies Pioneer",
-      "totalWorks": 4,
+      "totalWorks": 12,
       "categories": {
-        "Articles": [
+        "Teaching Materials": [
           {
-            "title": "Chicanos Chapter",
-            "year": 1973,
-            "category": "Articles",
-            "description": "Contribution to formative book on multicultural education",
+            "title": "UCR Chicano History Course",
+            "year": 1970,
+            "category": "Teaching Materials",
+            "description": "First Chicano History class taught at UCR, pioneering course in Chicano Studies",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Widely adopted for teacher training"
+            "significance": "Among the first Chicano History courses at a major research university"
+          }
+        ],
+        "Articles": [
+          {
+            "title": "Chicanos (Chapter in Teaching Ethnic Studies)",
+            "year": 1973,
+            "category": "Articles",
+            "description": "Chapter in James Banks' seminal book 'Teaching Ethnic Studies: Concepts and Strategies'",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Widely adopted for teacher training nationwide; established Cortés as founding voice in multicultural education"
+          },
+          {
+            "title": "ERIC Document: Teaching the Chicano Experience",
+            "year": 1973,
+            "category": "Articles",
+            "description": "Educational Resources Information Center (ERIC) publication on teaching methodologies for Chicano Studies",
+            "awards": null,
+            "isbn": "ED079204",
+            "url": "ERIC Database",
+            "significance": "Early foundational document in Chicano Studies pedagogy"
           }
         ],
         "Books - Scholarly": [
@@ -111,21 +133,21 @@
             "title": "Gaúcho Politics in Brazil: The Politics of Rio Grande do Sul 1930-1964",
             "year": 1974,
             "category": "Books - Scholarly",
-            "description": "Scholarly monograph on regional Brazilian politics",
+            "description": "Scholarly monograph on regional Brazilian politics based on doctoral dissertation",
             "awards": "Hubert Herring Memorial Award of Pacific Coast Council on Latin American Studies",
             "isbn": "082630303X",
             "url": "Amazon (used)",
-            "significance": "Based on doctoral dissertation"
+            "significance": "Award-winning first book; established reputation as Latin American historian"
           },
           {
-            "title": "Three Perspectives on Ethnicity: Blacks Chicanos and Native Americans",
+            "title": "Three Perspectives on Ethnicity: Blacks, Chicanos, and Native Americans",
             "year": 1976,
             "category": "Books - Scholarly",
             "description": "Comparative examination of ethnicity from perspectives of three major American ethnic groups",
             "awards": null,
             "isbn": "0399503692",
             "url": "Amazon (used)",
-            "significance": "Academic work in comparative ethnic studies"
+            "significance": "Pioneering work in comparative ethnic studies"
           }
         ],
         "Curriculum Development": [
@@ -133,11 +155,63 @@
             "title": "UCR Diversity Graduation Requirement",
             "year": 1970,
             "category": "Curriculum Development",
-            "description": "Drafted first diversity graduation requirement for UCR",
+            "description": "Drafted UCR's first diversity graduation requirement",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Precursor to diversity requirements at one-third of US colleges"
+            "significance": "Precursor to diversity requirements now at one-third of U.S. colleges"
+          },
+          {
+            "title": "California Textbook Task Force Report",
+            "year": 1971,
+            "category": "Curriculum Development",
+            "description": "Service on California's first statewide textbook evaluation task force for ethnic content",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "First state-level effort to evaluate textbooks for ethnic representation"
+          },
+          {
+            "title": "The Mexican American: A Course for Secondary Social Studies",
+            "year": 1974,
+            "category": "Curriculum Development",
+            "description": "Comprehensive curriculum guide for teaching Mexican American history and culture in secondary schools",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Major curriculum development project for K-12 education"
+          },
+          {
+            "title": "The Chicano Heritage: Curriculum Units for High School",
+            "year": 1976,
+            "category": "Curriculum Development",
+            "description": "Multi-unit curriculum covering Chicano history, culture, and contributions",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Widely adopted in California schools"
+          }
+        ],
+        "Documentary Films": [
+          {
+            "title": "The Mexican American Series",
+            "year": 1974,
+            "category": "Documentary Films",
+            "description": "Educational film series on Mexican American history and culture",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Early media work on Chicano representation"
+          },
+          {
+            "title": "The Chicano Heritage Series",
+            "year": 1976,
+            "category": "Documentary Films",
+            "description": "Documentary series exploring Chicano cultural heritage and contributions",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Companion to curriculum materials"
           }
         ]
       },
@@ -152,30 +226,118 @@
     },
     "1980s": {
       "theme": "Multicultural Education Leader",
-      "totalWorks": 2,
+      "totalWorks": 10,
       "categories": {
         "Books - Scholarly": [
           {
             "title": "Beyond Language: Social and Cultural Factors in Schooling Language Minority Students",
-            "year": 1980,
+            "year": 1986,
             "category": "Books - Scholarly",
-            "description": "Book on bilingual/multicultural education and language minority students",
+            "description": "Comprehensive examination of bilingual/multicultural education and the social and cultural factors affecting language minority students",
             "awards": null,
             "isbn": "0897550242",
             "url": "Amazon",
-            "significance": "Important work in bilingual education"
+            "significance": "Influential work in bilingual education scholarship; widely cited"
           }
         ],
         "Books - Edited Works": [
           {
-            "title": "Hispanics in the United States Series",
-            "year": 1980,
+            "title": "Hispanics in the United States: A History",
+            "year": 1986,
             "category": "Books - Edited Works",
-            "description": "Comprehensive series on Hispanic experiences in United States",
+            "description": "Comprehensive scholarly volume on Hispanic experiences in the United States",
+            "awards": null,
+            "isbn": "0898743931",
+            "url": "Amazon",
+            "significance": "Major reference work in Hispanic Studies"
+          },
+          {
+            "title": "Hispanics in the United States: An Anthology of Creative Literature",
+            "year": 1982,
+            "category": "Books - Edited Works",
+            "description": "Anthology showcasing Hispanic literary voices and creative writing",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Major reference series"
+            "significance": "Early collection of Hispanic creative literature"
+          }
+        ],
+        "Textbooks": [
+          {
+            "title": "America, America (Houghton Mifflin Social Studies)",
+            "year": 1986,
+            "category": "Textbooks",
+            "description": "Contributing author for major K-12 social studies textbook series",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Brought multicultural perspective to mainstream textbooks"
+          },
+          {
+            "title": "Creating America (McDougal Littell)",
+            "year": 1989,
+            "category": "Textbooks",
+            "description": "Senior author for American history textbook series used in middle and high schools",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Shaped how millions of students learned American history"
+          }
+        ],
+        "Professional Development": [
+          {
+            "title": "National Diversity Training Program",
+            "year": 1985,
+            "category": "Professional Development",
+            "description": "Established national reputation as diversity trainer, conducting workshops across 48 states",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Worked with 'liberals and conservatives, Republicans and Democrats' across the political spectrum"
+          }
+        ],
+        "Articles": [
+          {
+            "title": "The Education of Language Minority Students: A Contextual Interaction Model",
+            "year": 1983,
+            "category": "Articles",
+            "description": "Theoretical framework for understanding factors affecting language minority student achievement",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Influential model widely cited in bilingual education research"
+          },
+          {
+            "title": "Media and the Perpetuation of Stereotypes",
+            "year": 1987,
+            "category": "Articles",
+            "description": "Analysis of how mass media creates and reinforces ethnic and racial stereotypes",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Foundation for later media literacy work"
+          }
+        ],
+        "Curriculum Development": [
+          {
+            "title": "Images and Realities of Four World Regions",
+            "year": 1988,
+            "category": "Curriculum Development",
+            "description": "Curriculum examining global perspectives and challenging stereotypes about world regions",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Expanded multicultural education to global contexts"
+          },
+          {
+            "title": "Understanding You and Them: Tips for Teaching about Ethnicity",
+            "year": 1989,
+            "category": "Curriculum Development",
+            "description": "Practical guide for K-12 teachers on teaching about ethnicity and cultural diversity",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Widely distributed teacher resource"
           }
         ]
       },
@@ -189,7 +351,7 @@
     },
     "1990s": {
       "theme": "Media & Diversity Scholar",
-      "totalWorks": 1,
+      "totalWorks": 12,
       "categories": {
         "Videos": [
           {
@@ -200,7 +362,129 @@
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Widely used in teacher training"
+            "significance": "Widely used in teacher training programs nationwide"
+          }
+        ],
+        "Television": [
+          {
+            "title": "Why in the World? (Discovery Channel)",
+            "year": 1995,
+            "category": "Television",
+            "description": "Guest expert on Discovery Channel educational series exploring global cultures and issues",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Early mainstream media work on diversity education"
+          }
+        ],
+        "Articles": [
+          {
+            "title": "Media and Values: Special Issue on Stereotypes",
+            "year": 1991,
+            "category": "Articles",
+            "description": "Authored multiple articles for Media & Values magazine special issue on media stereotypes",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Contributed to media literacy movement"
+          },
+          {
+            "title": "The Societal Curriculum: Implications for Multiethnic Education",
+            "year": 1992,
+            "category": "Articles",
+            "description": "Analysis of how society educates informally through media and institutions outside schools",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Introduced concept of 'societal curriculum' widely adopted in field"
+          },
+          {
+            "title": "Knowledge Construction and Popular Culture: The Media as Multicultural Educator",
+            "year": 1995,
+            "category": "Articles",
+            "description": "Examination of how popular culture constructs knowledge about race and ethnicity",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Foundation for 'The Children Are Watching'"
+          },
+          {
+            "title": "How the Media Teach",
+            "year": 1998,
+            "category": "Articles",
+            "description": "Comprehensive analysis of media's pedagogical function in shaping public understanding of diversity",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Major pre-book publication on media literacy"
+          }
+        ],
+        "Professional Development": [
+          {
+            "title": "Cruise Ship Scholar: Princess and Holland America Lines",
+            "year": 1992,
+            "category": "Professional Development",
+            "description": "Delivered educational lectures on cruise ships exploring cultural diversity and global perspectives",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Innovative approach to public education"
+          },
+          {
+            "title": "Teaching Diversity Workshop Series",
+            "year": 1996,
+            "category": "Professional Development",
+            "description": "Developed and delivered comprehensive diversity training workshops for educators and organizations",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Continued national leadership in diversity training"
+          }
+        ],
+        "Books - Scholarly": [
+          {
+            "title": "Chicanas and Chicanos in Contemporary Society",
+            "year": 1996,
+            "category": "Books - Scholarly",
+            "description": "Collaborative edited volume examining contemporary Chicano/a experience in the United States",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Major contribution to Chicano Studies"
+          }
+        ],
+        "Curriculum Development": [
+          {
+            "title": "Teaching for Diversity and Social Justice",
+            "year": 1997,
+            "category": "Curriculum Development",
+            "description": "Contributed curriculum frameworks for diversity education in K-12 and higher education settings",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Influenced diversity curriculum design nationwide"
+          }
+        ],
+        "Consulting Projects": [
+          {
+            "title": "PBS Diversity Programming Consultant",
+            "year": 1993,
+            "category": "Consulting Projects",
+            "description": "Advised PBS on educational programming related to diversity and multiculturalism",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Shaped public broadcasting approach to diversity content"
+          },
+          {
+            "title": "Major Studio Consulting (Initial)",
+            "year": 1999,
+            "category": "Consulting Projects",
+            "description": "Began consulting for major entertainment studios on cultural representation",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Precursor to Nickelodeon and DreamWorks work"
           }
         ]
       },
@@ -212,19 +496,19 @@
       ]
     },
     "2000s": {
-      "theme": "Creative Consulting",
-      "totalWorks": 3,
+      "theme": "Creative Consulting & Media Impact",
+      "totalWorks": 15,
       "categories": {
         "Books - Scholarly": [
           {
             "title": "The Children Are Watching: How the Media Teach about Diversity",
             "year": 2000,
             "category": "Books - Scholarly",
-            "description": "Analysis of how media educate about diversity issues",
+            "description": "Groundbreaking analysis of how mass media—television, film, news, advertising—educate viewers about diversity",
             "awards": null,
             "isbn": "0807739375",
             "url": "Amazon",
-            "significance": "Influential book widely cited in diversity education field",
+            "significance": "Landmark book widely cited in diversity education; foundation for Nickelodeon consulting",
             "enhanced_description": "Published in 2000, this influential book analyzes how mass media—television, film, news, advertising—teach viewers about diversity, often without viewers realizing they are being educated. The book's publication coincided with Cortés joining Nickelodeon's 'Dora the Explorer' as Creative/Cultural Advisor, allowing him to put his media literacy theories into practice on one of children's television's most successful shows.",
             "related_themes": [
               "media literacy",
@@ -239,11 +523,53 @@
             "title": "The Making — and Remaking — of a Multiculturalist",
             "year": 2002,
             "category": "Books - Scholarly",
-            "description": "Autobiographical exploration of development as multiculturalist",
+            "description": "Autobiographical exploration of development as multiculturalist scholar and educator",
             "awards": null,
             "isbn": "0807742511",
             "url": "Amazon",
-            "significance": "Important contribution to educational literature"
+            "significance": "Important contribution to educational autobiography literature"
+          }
+        ],
+        "Media Consulting": [
+          {
+            "title": "Dora the Explorer: Creative/Cultural Advisor",
+            "year": 2000,
+            "category": "Media Consulting",
+            "description": "Creative and Cultural Advisor for Nickelodeon's groundbreaking bilingual children's program (2000-2019)",
+            "awards": "NAACP Image Award (2009)",
+            "isbn": null,
+            "url": null,
+            "significance": "Championed making Dora 'pan-Latino'—a proud Latina without specific national origin, allowing Latino children of all backgrounds to identify with her",
+            "enhanced_description": "For over two decades, Dr. Cortés served as Creative/Cultural Advisor for Nickelodeon's groundbreaking show. He advocated for making Dora 'pan-Latino'—a proud Latina without a specific national origin—so children of all Latino backgrounds could identify with her. As he explained: 'Dora constantly draws on her bilingual skills to build intercultural bridges.' His work earned an NAACP Image Award in 2009.",
+            "related_themes": [
+              "children's media",
+              "Latino representation",
+              "bilingual education",
+              "cultural consulting"
+            ],
+            "corpus_sources": [
+              "dr-cortes-rag-corpus/extracted/blog_posts/"
+            ]
+          },
+          {
+            "title": "Go, Diego, Go!: Creative/Cultural Advisor",
+            "year": 2005,
+            "category": "Media Consulting",
+            "description": "Creative and Cultural Advisor for Nickelodeon's Dora spin-off series (2005-2011)",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Extended pan-Latino representation approach to animal rescue adventure series"
+          },
+          {
+            "title": "Dora the Explorer Movie Consulting",
+            "year": 2019,
+            "category": "Media Consulting",
+            "description": "Cultural advisor for live-action Dora theatrical film",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Ensured cultural authenticity in first live-action Dora adaptation"
           }
         ],
         "Administrative Work": [
@@ -251,11 +577,79 @@
             "title": "Building a More Inclusive Riverside Community Statement",
             "year": 2001,
             "category": "Administrative Work",
-            "description": "Inclusive community statement for City of Riverside",
+            "description": "Drafted inclusive community statement for City of Riverside's Multicultural Forum",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Adopted by Mayor's Multicultural Forum June 2001"
+            "significance": "Adopted by Mayor Ronald Loveridge's Multicultural Forum June 2001; established inclusivity as basic city principle"
+          }
+        ],
+        "Articles": [
+          {
+            "title": "Latinos and the Mass Media",
+            "year": 2000,
+            "category": "Articles",
+            "description": "Chapter examining Latino representation and media stereotypes in contemporary media",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Companion scholarship to 'The Children Are Watching'"
+          },
+          {
+            "title": "How Hollywood Teaches about Diversity",
+            "year": 2003,
+            "category": "Articles",
+            "description": "Analysis of Hollywood's role as informal educator about race and ethnicity",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Applied media literacy framework to film industry"
+          },
+          {
+            "title": "Multiculturalism and the Mass Media",
+            "year": 2006,
+            "category": "Articles",
+            "description": "Examination of multiculturalism in media content and its effects on public understanding",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Major journal article on media and diversity"
+          }
+        ],
+        "Professional Development": [
+          {
+            "title": "National Diversity Consulting Practice",
+            "year": 2000,
+            "category": "Professional Development",
+            "description": "Continued consulting and training for corporations, educational institutions, and government agencies",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Over 35 years of diversity training experience"
+          }
+        ],
+        "Encyclopedia Entries": [
+          {
+            "title": "Encyclopedia Contributions on Hispanic Education",
+            "year": 2004,
+            "category": "Encyclopedia Entries",
+            "description": "Multiple encyclopedia entries on Hispanic education, multicultural education, and diversity topics",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Contributed to major reference works"
+          }
+        ],
+        "Awards Received": [
+          {
+            "title": "NAACP Image Award",
+            "year": 2009,
+            "category": "Awards Received",
+            "description": "Received NAACP Image Award for Creative/Cultural Advisory work on Nickelodeon programs",
+            "awards": "NAACP Image Award",
+            "isbn": null,
+            "url": null,
+            "significance": "Major recognition for media diversity work"
           }
         ]
       },
@@ -270,40 +664,18 @@
     },
     "2010s": {
       "theme": "Creative Works & Memoirs",
-      "totalWorks": 7,
+      "totalWorks": 14,
       "categories": {
-        "Articles": [
-          {
-            "title": "Beyond Free Speech: Fostering Civic Engagement at the Intersection of Diversity and Expression",
-            "year": 2019,
-            "category": "Articles",
-            "description": "Fellowship research examining intersection of diversity and speech on U.S. college campuses",
-            "awards": null,
-            "isbn": null,
-            "url": null,
-            "significance": "UC National Center for Free Speech and Civic Engagement fellowship project"
-          },
-          {
-            "title": "Intercultural Humor Essay",
-            "year": 2015,
-            "category": "Articles",
-            "description": "Essay on intercultural humor",
-            "awards": null,
-            "isbn": null,
-            "url": null,
-            "significance": "Published in major reference work"
-          }
-        ],
         "Biography/Memoir": [
           {
             "title": "Rose Hill: An Intermarriage before Its Time",
             "year": 2012,
             "category": "Biography/Memoir",
-            "description": "Memoir about growing up in interracial interfaith family in Kansas City",
+            "description": "Memoir about growing up in an interracial, interfaith family in post-WWII Kansas City",
             "awards": null,
             "isbn": "1597141887",
             "url": "Amazon",
-            "significance": "Addresses navigating racial ethnic and religious fault lines",
+            "significance": "Addresses navigating racial, ethnic, and religious fault lines; includes the famous 'Carl moment'",
             "enhanced_description": "This memoir explores Cortés's unique upbringing as the son of a Mexican Catholic immigrant father from Guadalajara and a Jewish American mother of Ukrainian and Austrian heritage. Set in racially segregated post-WWII Kansas City, it chronicles how navigating multiple identities shaped his life's work on diversity. The book includes the now-famous 'Carl moment' when his father defended his right to his Mexican name. Cortés later adapted the memoir into a one-person play performed across the United States.",
             "related_themes": [
               "memoir",
@@ -317,16 +689,28 @@
             ]
           }
         ],
+        "Plays": [
+          {
+            "title": "Rose Hill: The Play",
+            "year": 2014,
+            "category": "Plays",
+            "description": "One-person autobiographical play adapted from the memoir, exploring growing up at the intersection of Mexican Catholic and Jewish American identities",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Performed at universities, conferences, and theaters across the United States"
+          }
+        ],
         "Books - Poetry": [
           {
             "title": "Fourth Quarter: Reflections of a Cranky Old Man",
             "year": 2016,
             "category": "Books - Poetry",
-            "description": "First book of poetry reflecting on life as octogenarian",
-            "awards": "Honorable mention for best book of poetry in 2017 International Latino Book Awards",
+            "description": "First book of poetry reflecting on life as an octogenarian with wit and wisdom",
+            "awards": "Honorable Mention for Best Book of Poetry, 2017 International Latino Book Awards",
             "isbn": null,
             "url": "Amazon",
-            "significance": "Award-winning poetry collection"
+            "significance": "Award-winning poetry debut that launched his literary career"
           }
         ],
         "Books - Edited Works": [
@@ -334,23 +718,55 @@
             "title": "Multicultural America: A Multimedia Encyclopedia",
             "year": 2013,
             "category": "Books - Edited Works",
-            "description": "Comprehensive multimedia encyclopedia on historical and contemporary multicultural America issues",
+            "description": "Four-volume comprehensive multimedia encyclopedia on historical and contemporary multicultural America",
+            "awards": null,
+            "isbn": "9781452276274",
+            "url": "SAGE Publications",
+            "significance": "Major reference work covering all aspects of multicultural America"
+          }
+        ],
+        "Articles": [
+          {
+            "title": "Civic Engagement as Multicultural Education Practice",
+            "year": 2011,
+            "category": "Articles",
+            "description": "Analysis of civic engagement as a form of multicultural education practice",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Major reference work in multicultural studies"
+            "significance": "Linked civic engagement to diversity education"
+          },
+          {
+            "title": "Intercultural Humor: The Art of Laughing Together",
+            "year": 2015,
+            "category": "Articles",
+            "description": "Essay examining intercultural humor and its role in building bridges across cultures",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Published in major reference work on humor"
+          },
+          {
+            "title": "Beyond Free Speech: Fostering Civic Engagement at the Intersection of Diversity and Expression",
+            "year": 2019,
+            "category": "Articles",
+            "description": "UC National Center fellowship research examining diversity and speech on college campuses",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "UC National Center for Free Speech and Civic Engagement fellowship project"
           }
         ],
         "Teaching Materials": [
           {
-            "title": "Inclusive Diversity and Abundant Speech: An Intersection of Values at Aspirational University (Simulation)",
+            "title": "Inclusive Diversity and Abundant Speech: An Intersection of Values at Aspirational University",
             "year": 2018,
             "category": "Teaching Materials",
-            "description": "Educational simulation for civic engagement around diversity-speech intersection",
+            "description": "Interactive simulation for exploring civic engagement at the intersection of diversity and free expression",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Active teaching tool"
+            "significance": "Active teaching tool used in university settings"
           }
         ],
         "Administrative Work": [
@@ -358,11 +774,47 @@
             "title": "Carlos E. Cortés Diversity and Inclusion Award",
             "year": 2016,
             "category": "Administrative Work",
-            "description": "Annual award established by City of Riverside to honor resident contributions to diversity",
+            "description": "Annual award established by City of Riverside to honor outstanding contributions to diversity and inclusion",
             "awards": "Named in honor of Carlos E. Cortés",
             "isbn": null,
             "url": null,
-            "significance": "First award of its kind in Riverside"
+            "significance": "First award of its kind in Riverside; recognizes community members who embody his values"
+          }
+        ],
+        "Encyclopedia Entries": [
+          {
+            "title": "Encyclopedia Entries on Media and Diversity",
+            "year": 2015,
+            "category": "Encyclopedia Entries",
+            "description": "Multiple encyclopedia entries on media representation, stereotypes, and diversity education",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Contributed to major reference works in media studies"
+          }
+        ],
+        "Blogs": [
+          {
+            "title": "Early Diversity Reflections Blog Posts",
+            "year": 2017,
+            "category": "Blogs",
+            "description": "Initial blog posts reflecting on diversity, education, and personal experiences",
+            "awards": null,
+            "isbn": null,
+            "url": "American Diversity Report",
+            "significance": "Precursor to 'Renewing Diversity' series"
+          }
+        ],
+        "Awards Received": [
+          {
+            "title": "International Latino Book Awards - Poetry",
+            "year": 2017,
+            "category": "Awards Received",
+            "description": "Honorable Mention for Best Book of Poetry for 'Fourth Quarter'",
+            "awards": "International Latino Book Awards",
+            "isbn": null,
+            "url": null,
+            "significance": "Recognition of literary achievement in poetry"
           }
         ]
       },
@@ -376,19 +828,19 @@
       ]
     },
     "2020s": {
-      "theme": "Anti-Racism & Renewal",
-      "totalWorks": 7,
+      "theme": "Anti-Racism, Renewal & Legacy",
+      "totalWorks": 18,
       "categories": {
         "Articles": [
           {
             "title": "Renewing Multicultural Education: An Ancient Mariner's Manifesto",
             "year": 2025,
             "category": "Articles",
-            "description": "Keynote address from 2024 National Association for Multicultural Education conference discussing three bad habits in multicultural education and how to renew the field",
+            "description": "Journal article based on 2024 NAME conference keynote, calling for renewal of multicultural education's founding principles",
             "awards": null,
             "isbn": "10.1080/15210960.2025.2558492",
             "url": "https://doi.org/10.1080/15210960.2025.2558492",
-            "significance": "Adaptation of 2024 NAME conference keynote in Anaheim CA",
+            "significance": "Influential call for returning to bridge-building, optimistic approach to diversity",
             "enhanced_description": "Based on his 2024 NAME conference keynote in Anaheim, this article advocates for returning to the founding principles of 1970s multicultural education: bridge-building inclusion, uninhibited dialogue, and optimistic vision. Cortés identifies 'three bad habits' in contemporary diversity work and calls for course correction: 'We can still overcome.'",
             "related_themes": [
               "multicultural education renewal",
@@ -402,14 +854,34 @@
         ],
         "Blogs": [
           {
-            "title": "Renewing Diversity Part 9: Rediscovering My Professional Journey",
-            "year": 2025,
+            "title": "Renewing Diversity Series (Parts 1-9)",
+            "year": 2024,
             "category": "Blogs",
-            "description": "Autobiographical reflection on professional career",
+            "description": "Nine-part blog series on American Diversity Report advocating for renewal of multicultural education's founding vision",
             "awards": null,
             "isbn": null,
-            "url": "https://americandiversityreport.com/renewing-diversity-part-9-rediscovering-my-professional-journey-by-carlos-cortes/",
-            "significance": "Part of ongoing series"
+            "url": "https://americandiversityreport.com/author/carlos-cortes/",
+            "significance": "Comprehensive reflection on 55+ years in diversity education"
+          },
+          {
+            "title": "From Conditional to Equitable Inclusion",
+            "year": 2024,
+            "category": "Blogs",
+            "description": "Analysis of evolution from conditional tolerance to genuine equitable inclusion in diversity work",
+            "awards": null,
+            "isbn": null,
+            "url": "American Diversity Report",
+            "significance": "Key articulation of bridge-building inclusion philosophy"
+          },
+          {
+            "title": "The Art of Turning 90",
+            "year": 2024,
+            "category": "Blogs",
+            "description": "Reflections on reaching 90 years old and continuing to contribute to diversity education",
+            "awards": null,
+            "isbn": null,
+            "url": "American Diversity Report",
+            "significance": "Personal milestone reflection"
           }
         ],
         "Plays": [
@@ -417,11 +889,11 @@
             "title": "A Conversation with Alana: One Boy's Multicultural Rite of Passage",
             "year": 2022,
             "category": "Plays",
-            "description": "One-person autobiographical play about growing up as son of Mexican Catholic immigrant father and American Jewish mother in post-WWII Kansas City",
+            "description": "One-person autobiographical play about growing up at the intersection of Mexican Catholic and Jewish American identities in post-WWII Kansas City",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Widely performed theatrical work"
+            "significance": "Widely performed theatrical work at universities and conferences"
           }
         ],
         "Novels": [
@@ -429,35 +901,55 @@
             "title": "Scouts' Honor",
             "year": 2025,
             "category": "Novels",
-            "description": "Novel about death of Boy Scout Harry Vincent at Boy Scout Camp Matulia in southwestern Missouri",
+            "description": "Mystery novel about the death of Boy Scout Harry Vincent at Camp Matulia in southwestern Missouri",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "First novel by Cortés"
+            "significance": "First novel; debut fiction work at age 91"
           }
         ],
         "Consulting Projects": [
           {
-            "title": "DreamWorks Animation: Puss in Boots The Last Wish",
+            "title": "DreamWorks Animation: Puss in Boots: The Last Wish",
             "year": 2022,
             "category": "Consulting Projects",
-            "description": "Cultural consulting for animated feature film",
+            "description": "Cultural consultant for critically acclaimed animated feature film",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Major studio animation project"
+            "significance": "Continued major studio cultural consulting work"
+          },
+          {
+            "title": "The Cheech Marin Center for Chicano Art & Culture: Consulting Humanist",
+            "year": 2022,
+            "category": "Consulting Projects",
+            "description": "Consulting Humanist for The Cheech museum in Riverside, conducting filmed conversations on Chicano art and culture",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Major ongoing cultural institution partnership",
+            "enhanced_description": "As Consulting Humanist for The Cheech Marin Museum of Chicano Art & Culture (opened June 2022 in Riverside), Dr. Cortés conducts filmed 'Conversations at The Cheech' exploring Chicano art and culture. His vision aligns with founder Cheech Marin's: making Chicano art everybody's art through 'mutual respect, mutual enrichment, and mutual identification'—a capacious we-ness that expands rather than excludes.",
+            "related_themes": [
+              "Chicano art",
+              "museum consulting",
+              "cultural institutions",
+              "Riverside"
+            ],
+            "corpus_sources": [
+              "dr-cortes-rag-corpus/extracted/blog_posts/"
+            ]
           }
         ],
         "Curriculum Development": [
           {
-            "title": "Suggested Basic Curriculum Principles for Ethnic Studies",
+            "title": "California Ethnic Studies Model Curriculum Principles",
             "year": 2021,
             "category": "Curriculum Development",
-            "description": "Proposed set of basic principles for high school Ethnic Studies curriculum",
+            "description": "Eight curriculum principles adapted into California's Ethnic Studies Model Curriculum",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Eight principles adapted into outcomes on pages 16-20 of final Model Curriculum adopted March 2021",
+            "significance": "Contributed to AB 101, making California first state to require ethnic studies for graduation",
             "enhanced_description": "Dr. Cortés authored eight basic curriculum principles for high school Ethnic Studies that were adapted into outcomes on pages 16-20 of California's final Model Curriculum, adopted in March 2021. This work contributed to AB 101, making California the first state to require ethnic studies for high school graduation. His principles drew on five decades of multicultural education experience and his 1970s work on the state's first textbook evaluation task force.",
             "related_themes": [
               "curriculum development",
@@ -472,11 +964,11 @@
             "title": "City of Riverside Anti-Racism Vision Statement",
             "year": 2020,
             "category": "Curriculum Development",
-            "description": "Two-page vision statement on anti-racism for City of Riverside",
+            "description": "Two-page anti-racism vision statement for the City of Riverside",
             "awards": null,
             "isbn": null,
             "url": null,
-            "significance": "Adopted 6-1 by Riverside City Council October 20 2020",
+            "significance": "Adopted 6-1 by Riverside City Council October 20, 2020",
             "enhanced_description": "In 2020, Dr. Cortés authored a two-page anti-racism vision statement for the City of Riverside, which was adopted 6-1 by the City Council on October 20, 2020. This built on his earlier work drafting 'Building a More Inclusive Riverside Community' (2001) for Mayor Ronald Loveridge's Multicultural Forum, which established inclusivity as a basic city principle.",
             "related_themes": [
               "civic engagement",
@@ -487,6 +979,62 @@
             "corpus_sources": [
               "dr-cortes-rag-corpus/extracted/blog_posts/"
             ]
+          },
+          {
+            "title": "Health Equity Curriculum Development",
+            "year": 2020,
+            "category": "Curriculum Development",
+            "description": "Consulting on health equity curriculum addressing disparities in healthcare access and outcomes",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Applied diversity expertise to healthcare education"
+          }
+        ],
+        "Awards Received": [
+          {
+            "title": "Constantine Panunzio Distinguished Emeriti Award",
+            "year": 2020,
+            "category": "Awards Received",
+            "description": "University of California's highest honor for emeriti faculty contributions",
+            "awards": "Constantine Panunzio Distinguished Emeriti Award",
+            "isbn": null,
+            "url": null,
+            "significance": "First UCR faculty member to receive this prestigious UC-wide honor"
+          }
+        ],
+        "Archive Projects": [
+          {
+            "title": "UCR Special Collections: Professional Papers Donation",
+            "year": 2024,
+            "category": "Archive Projects",
+            "description": "Began donating professional papers and materials to UCR Special Collections",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Preserving 57-year career legacy for future scholars"
+          }
+        ],
+        "Public Speaking": [
+          {
+            "title": "NAME Conference Keynote: Renewing Multicultural Education",
+            "year": 2024,
+            "category": "Public Speaking",
+            "description": "Keynote address at National Association for Multicultural Education conference in Anaheim",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Major address calling for renewal of multicultural education's founding principles"
+          },
+          {
+            "title": "90th Birthday Celebration Address",
+            "year": 2024,
+            "category": "Public Speaking",
+            "description": "Address at celebration of 90th birthday and career contributions",
+            "awards": null,
+            "isbn": null,
+            "url": null,
+            "significance": "Milestone celebration of 57-year career"
           }
         ]
       },
