@@ -990,6 +990,131 @@ h3 { font-size: var(--font-size-2xl); }
     color: var(--color-text-secondary);
 }
 
+/* ========== RAG ENHANCED CONTENT STYLES ========== */
+
+/* Timeline highlights in biography */
+.timeline-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.timeline-item {
+    display: flex;
+    gap: var(--space-4);
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-year {
+    font-weight: 700;
+    color: var(--color-navy);
+    min-width: 60px;
+    font-size: var(--font-size-sm);
+}
+
+.timeline-event {
+    flex: 1;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+}
+
+/* Decade summary and achievements */
+.decade-summary {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-navy);
+}
+
+.decade-summary p {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+    font-size: var(--font-size-sm);
+}
+
+.decade-achievements {
+    margin-top: var(--space-4);
+    padding: var(--space-4);
+    background: rgba(39, 174, 96, 0.05);
+    border-radius: var(--radius-md);
+}
+
+.decade-achievements h4 {
+    margin: 0 0 var(--space-3) 0;
+    color: var(--color-navy);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.decade-achievements ul {
+    margin: 0;
+    padding-left: var(--space-5);
+}
+
+.decade-achievements li {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    margin-bottom: var(--space-2);
+}
+
+.decade-achievements li:last-child {
+    margin-bottom: 0;
+}
+
+/* Work enhanced description */
+.work-enhanced {
+    margin-top: var(--space-6);
+    padding: var(--space-5);
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.03) 0%, rgba(142, 68, 173, 0.03) 100%);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(44, 62, 80, 0.1);
+}
+
+.work-enhanced h4 {
+    margin: 0 0 var(--space-3) 0;
+    color: var(--color-navy);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.work-enhanced p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    font-size: var(--font-size-base);
+}
+
+/* Theme tags */
+.work-themes {
+    margin-top: var(--space-4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.theme-tag {
+    padding: var(--space-1) var(--space-3);
+    background: var(--color-navy);
+    color: white;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 1024px) {
     .stats-panel {

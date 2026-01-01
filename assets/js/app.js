@@ -415,11 +415,32 @@ class ModalManager {
                 <p>${bio.bio}</p>
             </div>
 
+            ${bio.personal_background ? `
+                <div class="bio-section">
+                    <h3>Personal Background</h3>
+                    <p>${bio.personal_background}</p>
+                </div>
+            ` : ''}
+
             <div class="bio-section">
                 <h3>Career Highlights</h3>
                 <p>Career Span: ${bio.careerStart}-present (${new Date().getFullYear() - bio.careerStart}+ years)</p>
                 <p>Total Literary Works: ${bio.totalWorks}</p>
             </div>
+
+            ${bio.timeline_highlights ? `
+                <div class="bio-section">
+                    <h3>Career Timeline</h3>
+                    <div class="timeline-highlights">
+                        ${bio.timeline_highlights.map(item => `
+                            <div class="timeline-item">
+                                <div class="timeline-year">${item.year}</div>
+                                <div class="timeline-event">${item.event}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            ` : ''}
 
             <div class="bio-section">
                 <h3>Major Awards & Recognition</h3>
@@ -450,8 +471,8 @@ class ModalManager {
         document.getElementById('decade-title').textContent = decadeConfig.range;
         document.getElementById('decade-theme').textContent = decadeConfig.theme;
 
-        // Update stats
-        const statsHtml = `
+        // Update stats with summary and key achievements
+        let statsHtml = `
             <div class="decade-stat">
                 <span class="decade-stat-number">${decade.totalWorks}</span>
                 <span class="decade-stat-label">Works</span>
@@ -461,6 +482,28 @@ class ModalManager {
                 <span class="decade-stat-label">Categories</span>
             </div>
         `;
+
+        // Add decade summary if available
+        if (decade.summary) {
+            statsHtml += `
+                <div class="decade-summary">
+                    <p>${decade.summary}</p>
+                </div>
+            `;
+        }
+
+        // Add key achievements if available
+        if (decade.key_achievements && decade.key_achievements.length > 0) {
+            statsHtml += `
+                <div class="decade-achievements">
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        ${decade.key_achievements.map(a => `<li>${a}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
         document.getElementById('decade-stats').innerHTML = statsHtml;
 
         // Render works grid
@@ -543,6 +586,21 @@ class ModalManager {
             <div class="work-description">
                 ${work.description || 'No description available.'}
             </div>
+
+            ${work.enhanced_description ? `
+                <div class="work-enhanced">
+                    <h4>In-Depth Context</h4>
+                    <p>${work.enhanced_description}</p>
+                </div>
+            ` : ''}
+
+            ${work.related_themes && work.related_themes.length > 0 ? `
+                <div class="work-themes">
+                    ${work.related_themes.map(theme => `
+                        <span class="theme-tag">${theme}</span>
+                    `).join('')}
+                </div>
+            ` : ''}
 
             ${work.awards ? `
                 <div class="work-awards">
