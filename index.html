@@ -6,10 +6,10 @@
     <meta name="description" content="Interactive timeline showcasing Dr. Carlos E. Cortés' 57-year career in multicultural education, diversity scholarship, and creative works spanning 1970-2025.">
     <title>Dr. Carlos E. Cortés - Annotated Bibliography Timeline</title>
 
-    <!-- Fonts -->
+    <!-- Fonts - Playfair Display for headings, Source Sans 3 for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -89,35 +89,27 @@
     <!-- Modals -->
 
     <!-- Biography Modal -->
-    <div id="modal-biography" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div id="modal-biography" class="modal modal-bio" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="modal-overlay"></div>
-        <div class="modal-container modal-large">
+        <div class="modal-container modal-xlarge">
             <button class="modal-close" aria-label="Close modal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
-            <div class="modal-body">
-                <div class="bio-header">
-                    <div class="bio-photo">
-                        <img src="assets/images/carlos-cortes.jpg" alt="Dr. Carlos E. Cortés" onerror="this.style.display='none'">
-                    </div>
-                    <div class="bio-info">
-                        <h2 class="bio-name">Dr. Carlos E. Cortés</h2>
-                        <p class="bio-title">Edward A. Dickson Emeritus Professor of History</p>
-                        <p class="bio-institution">University of California, Riverside</p>
-                    </div>
-                </div>
-                <div class="bio-content" id="bio-content">
-                    <!-- Populated by JavaScript -->
-                </div>
+            <div class="modal-header">
+                <h2 class="modal-title">Dr. Carlos E. Cortés</h2>
+                <p class="modal-subtitle">Edward A. Dickson Emeritus Professor of History • UC Riverside</p>
+            </div>
+            <div class="modal-body" id="bio-content">
+                <!-- Populated by JavaScript with bio-modal-layout -->
             </div>
         </div>
     </div>
 
     <!-- Decade Modal -->
-    <div id="modal-decade" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div id="modal-decade" class="modal modal-decade" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="modal-overlay"></div>
         <div class="modal-container modal-xlarge">
             <button class="modal-close" aria-label="Close modal">
@@ -127,14 +119,12 @@
                 </svg>
             </button>
             <div class="modal-body">
-                <div class="decade-header">
-                    <h2 class="decade-title" id="decade-title"></h2>
-                    <p class="decade-theme" id="decade-theme"></p>
-                </div>
+                <!-- Hidden placeholders for backwards compatibility -->
+                <h2 class="decade-title" id="decade-title" style="display:none"></h2>
+                <p class="decade-theme" id="decade-theme" style="display:none"></p>
+                <!-- Main content area - filled by JS with decade-modal-layout -->
                 <div class="decade-stats" id="decade-stats"></div>
-                <div class="works-grid" id="works-grid">
-                    <!-- Populated by JavaScript -->
-                </div>
+                <div class="works-grid" id="works-grid" style="display:none"></div>
             </div>
         </div>
     </div>

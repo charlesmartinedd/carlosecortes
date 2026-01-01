@@ -6,13 +6,14 @@
 // Configuration
 const CONFIG = {
     dataUrl: 'assets/data/timeline-data.json',
+    markerRadius: 45, // Larger, more prominent markers
     decades: [
-        { key: '1970s', range: '1970-1979', theme: 'Chicano Studies Pioneer', color: '#2C3E50' },
-        { key: '1980s', range: '1980-1989', theme: 'Multicultural Education Leader', color: '#8E44AD' },
-        { key: '1990s', range: '1990-1999', theme: 'Media & Diversity Scholar', color: '#2980B9' },
-        { key: '2000s', range: '2000-2009', theme: 'Creative Consulting', color: '#27AE60' },
-        { key: '2010s', range: '2010-2019', theme: 'Creative Works & Memoirs', color: '#E74C3C' },
-        { key: '2020s', range: '2020-2025', theme: 'Anti-Racism & Renewal', color: '#C0392B' }
+        { key: '1970s', range: '1970-1979', theme: 'Chicano Studies Pioneer', color: '#1e3a5f' },
+        { key: '1980s', range: '1980-1989', theme: 'Multicultural Education Leader', color: '#8b2942' },
+        { key: '1990s', range: '1990-1999', theme: 'Media & Diversity Scholar', color: '#1e3a5f' },
+        { key: '2000s', range: '2000-2009', theme: 'Creative Consulting', color: '#8b2942' },
+        { key: '2010s', range: '2010-2019', theme: 'Creative Works & Memoirs', color: '#1e3a5f' },
+        { key: '2020s', range: '2020-2025', theme: 'Anti-Racism & Renewal', color: '#8b2942' }
     ],
     categoryColors: {
         'Books - Scholarly': '#1976d2',
@@ -315,41 +316,50 @@ class TimelineRenderer {
         group.classList.add('decade-marker');
         group.setAttribute('data-decade', decade.key);
 
-        // Circle
+        const radius = CONFIG.markerRadius;
+
+        // Outer ring (decorative)
+        const outerRing = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        outerRing.setAttribute('cx', x);
+        outerRing.setAttribute('cy', y);
+        outerRing.setAttribute('r', radius + 8);
+        outerRing.classList.add('decade-marker-ring');
+
+        // Main circle
         const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
         circle.setAttribute('cx', x);
         circle.setAttribute('cy', y);
-        circle.setAttribute('r', 30);
+        circle.setAttribute('r', radius);
         circle.classList.add('decade-marker-circle');
 
-        // Decade label
+        // Decade label (larger, bold)
         const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
         text.setAttribute('x', x);
-        text.setAttribute('y', y + 5);
+        text.setAttribute('y', y + 6);
         text.classList.add('decade-marker-text');
         text.textContent = decade.key;
 
-        // Theme label
+        // Theme label (positioned below marker)
         const theme = document.createElementNS('http://www.w3.org/2000/svg', 'text');
         theme.setAttribute('x', x);
-        theme.setAttribute('y', y + 60);
+        theme.setAttribute('y', y + radius + 30);
         theme.classList.add('decade-theme-text');
         theme.textContent = decade.theme;
 
-        // Category counts
+        // Works count badge (positioned above marker)
         if (state.data?.decades?.[decade.key]) {
             const decadeData = state.data.decades[decade.key];
-            const categoryCount = Object.keys(decadeData.categories || {}).length;
             const worksCount = decadeData.totalWorks || 0;
 
             const count = document.createElementNS('http://www.w3.org/2000/svg', 'text');
             count.setAttribute('x', x);
-            count.setAttribute('y', y - 50);
+            count.setAttribute('y', y - radius - 20);
             count.classList.add('category-indicator');
-            count.textContent = `${worksCount} works • ${categoryCount} categories`;
+            count.textContent = `${worksCount} works`;
             group.appendChild(count);
         }
 
+        group.appendChild(outerRing);
         group.appendChild(circle);
         group.appendChild(text);
         group.appendChild(theme);
@@ -410,48 +420,74 @@ class ModalManager {
 
         if (!bio) return;
 
+        const careerYears = new Date().getFullYear() - bio.careerStart;
+
+        // Select top 6 timeline highlights for compact display
+        const topHighlights = bio.timeline_highlights ? bio.timeline_highlights.slice(0, 6) : [];
+
         content.innerHTML = `
-            <div class="bio-section">
-                <p>${bio.bio}</p>
-            </div>
-
-            ${bio.personal_background ? `
-                <div class="bio-section">
-                    <h3>Personal Background</h3>
-                    <p>${bio.personal_background}</p>
+            <div class="bio-modal-layout">
+                <!-- Sidebar with photo and stats -->
+                <div class="bio-sidebar">
+                    <div class="bio-photo-placeholder">
+                        <span class="initials">CEC</span>
+                    </div>
+                    <div class="bio-stats">
+                        <div class="bio-stat">
+                            <span class="bio-stat-number">${careerYears}+</span>
+                            <span class="bio-stat-label">Years in Academia</span>
+                        </div>
+                        <div class="bio-stat">
+                            <span class="bio-stat-number">${bio.totalWorks}</span>
+                            <span class="bio-stat-label">Published Works</span>
+                        </div>
+                        <div class="bio-stat">
+                            <span class="bio-stat-number">${bio.awards?.length || 0}</span>
+                            <span class="bio-stat-label">Major Awards</span>
+                        </div>
+                    </div>
                 </div>
-            ` : ''}
 
-            <div class="bio-section">
-                <h3>Career Highlights</h3>
-                <p>Career Span: ${bio.careerStart}-present (${new Date().getFullYear() - bio.careerStart}+ years)</p>
-                <p>Total Literary Works: ${bio.totalWorks}</p>
-            </div>
+                <!-- Main content area -->
+                <div class="bio-main">
+                    <div class="bio-intro">
+                        <p class="bio-lead">${bio.bio}</p>
+                    </div>
 
-            ${bio.timeline_highlights ? `
-                <div class="bio-section">
-                    <h3>Career Timeline</h3>
-                    <div class="timeline-highlights">
-                        ${bio.timeline_highlights.map(item => `
-                            <div class="timeline-item">
-                                <div class="timeline-year">${item.year}</div>
-                                <div class="timeline-event">${item.event}</div>
+                    ${bio.personal_background ? `
+                        <div class="bio-background">
+                            <h4>Personal Background</h4>
+                            <p>${bio.personal_background}</p>
+                        </div>
+                    ` : ''}
+                </div>
+
+                <!-- Timeline highlights row -->
+                ${topHighlights.length > 0 ? `
+                    <div class="bio-timeline-section">
+                        <h4>Career Milestones</h4>
+                        <div class="bio-timeline-grid">
+                            ${topHighlights.map(item => `
+                                <div class="bio-milestone">
+                                    <span class="milestone-year">${item.year}</span>
+                                    <span class="milestone-event">${item.event}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+
+                <!-- Awards row -->
+                <div class="bio-awards-section">
+                    <h4>Awards & Recognition</h4>
+                    <div class="bio-awards-grid">
+                        ${bio.awards.map(award => `
+                            <div class="bio-award-card">
+                                <span class="award-year-badge">${award.year}</span>
+                                <span class="award-name">${award.award}</span>
                             </div>
                         `).join('')}
                     </div>
-                </div>
-            ` : ''}
-
-            <div class="bio-section">
-                <h3>Major Awards & Recognition</h3>
-                <div class="awards-list">
-                    ${bio.awards.map(award => `
-                        <div class="award-item">
-                            <div class="award-year">${award.year}</div>
-                            <div class="award-title"><strong>${award.award}</strong></div>
-                            <div class="award-description">${award.description}</div>
-                        </div>
-                    `).join('')}
                 </div>
             </div>
         `;
@@ -467,66 +503,105 @@ class ModalManager {
 
         state.selectedDecade = decadeKey;
 
-        // Update header
-        document.getElementById('decade-title').textContent = decadeConfig.range;
-        document.getElementById('decade-theme').textContent = decadeConfig.theme;
+        // Get works list
+        const allWorks = [];
+        if (decade.categories) {
+            for (const works of Object.values(decade.categories)) {
+                allWorks.push(...works);
+            }
+        }
 
-        // Update stats with summary and key achievements
-        let statsHtml = `
-            <div class="decade-stat">
-                <span class="decade-stat-number">${decade.totalWorks}</span>
-                <span class="decade-stat-label">Works</span>
-            </div>
-            <div class="decade-stat">
-                <span class="decade-stat-number">${Object.keys(decade.categories || {}).length}</span>
-                <span class="decade-stat-label">Categories</span>
+        // Limit works displayed to fit without scroll (show top 6)
+        const displayWorks = allWorks.slice(0, 6);
+        const hasMore = allWorks.length > 6;
+
+        // Truncate summary to first 2 sentences for compact display
+        const summaryText = decade.summary ?
+            decade.summary.split('. ').slice(0, 2).join('. ') + '.' : '';
+
+        // Use decade-stats container for the entire new layout
+        const statsContainer = document.getElementById('decade-stats');
+
+        statsContainer.innerHTML = `
+            <div class="decade-modal-layout">
+                <!-- Header spanning full width -->
+                <div class="decade-header-section">
+                    <div class="decade-header-content">
+                        <h2 class="decade-range">${decadeConfig.range}</h2>
+                        <p class="decade-theme-label">${decadeConfig.theme}</p>
+                    </div>
+                    <div class="decade-header-stats">
+                        <div class="header-stat">
+                            <span class="header-stat-number">${decade.totalWorks}</span>
+                            <span class="header-stat-label">Works</span>
+                        </div>
+                        <div class="header-stat">
+                            <span class="header-stat-number">${Object.keys(decade.categories || {}).length}</span>
+                            <span class="header-stat-label">Categories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar with summary and achievements -->
+                <div class="decade-sidebar">
+                    ${summaryText ? `
+                        <div class="decade-summary-card">
+                            <h4>Overview</h4>
+                            <p>${summaryText}</p>
+                        </div>
+                    ` : ''}
+
+                    ${decade.key_achievements && decade.key_achievements.length > 0 ? `
+                        <div class="decade-achievements-card">
+                            <h4>Key Achievements</h4>
+                            <ul class="achievements-list">
+                                ${decade.key_achievements.slice(0, 4).map(a => `<li>${a}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                </div>
+
+                <!-- Works grid section -->
+                <div class="decade-works-section">
+                    <div class="works-header">
+                        <h4>Selected Works</h4>
+                        ${hasMore ? `<span class="works-more">+${allWorks.length - 6} more</span>` : ''}
+                    </div>
+                    <div class="works-compact-grid" id="works-grid-inner">
+                        ${displayWorks.map(work => `
+                            <div class="work-card-compact" data-title="${work.title}">
+                                <div class="work-card-header">
+                                    <span class="work-year-badge">${work.year}</span>
+                                    <span class="work-category-tag">${work.category}</span>
+                                </div>
+                                <h5 class="work-card-title">${work.title}</h5>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
             </div>
         `;
 
-        // Add decade summary if available
-        if (decade.summary) {
-            statsHtml += `
-                <div class="decade-summary">
-                    <p>${decade.summary}</p>
-                </div>
-            `;
-        }
+        // Hide the old header elements (we're using our own in the layout)
+        document.getElementById('decade-title').style.display = 'none';
+        document.getElementById('decade-theme').style.display = 'none';
+        document.getElementById('works-grid').style.display = 'none';
 
-        // Add key achievements if available
-        if (decade.key_achievements && decade.key_achievements.length > 0) {
-            statsHtml += `
-                <div class="decade-achievements">
-                    <h4>Key Achievements</h4>
-                    <ul>
-                        ${decade.key_achievements.map(a => `<li>${a}</li>`).join('')}
-                    </ul>
-                </div>
-            `;
-        }
+        // Add click handlers to work cards
+        statsContainer.querySelectorAll('.work-card-compact').forEach((card, index) => {
+            card.addEventListener('click', () => {
+                this.openWorkModal(displayWorks[index]);
+            });
 
-        document.getElementById('decade-stats').innerHTML = statsHtml;
-
-        // Render works grid
-        const grid = document.getElementById('works-grid');
-        grid.innerHTML = '';
-
-        if (decade.categories) {
-            for (const [categoryName, works] of Object.entries(decade.categories)) {
-                works.forEach((work, index) => {
-                    const card = this.createWorkCard(work);
-                    grid.appendChild(card);
-
-                    // Stagger animation
-                    gsap.from(card, {
-                        opacity: 0,
-                        y: 20,
-                        duration: 0.3,
-                        delay: index * 0.05,
-                        ease: 'power2.out'
-                    });
-                });
-            }
-        }
+            // Stagger animation
+            gsap.from(card, {
+                opacity: 0,
+                y: 15,
+                duration: 0.25,
+                delay: index * 0.05,
+                ease: 'power2.out'
+            });
+        });
 
         this.openModal('modal-decade');
     }
