@@ -281,16 +281,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: var(--header-height);
     min-height: calc(100vh - var(--header-height));
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: var(--space-8);
-    padding-left: 220px;
-    padding-top: var(--space-12);
+    padding-left: 180px;
 }
 
 .timeline-svg {
-    width: 400px;
-    height: 800px;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    aspect-ratio: 1400 / 500;
     opacity: 0;
     animation: fadeIn 0.8s var(--ease-out) 0.6s forwards;
 }
@@ -362,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-body);
     font-size: 13px;
     font-weight: 600;
-    text-anchor: start;
+    text-anchor: middle;
     pointer-events: none;
 }
 
@@ -371,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-body);
     font-weight: 600;
     fill: var(--color-text-tertiary);
-    text-anchor: start;
+    text-anchor: middle;
 }
 
 /* ========== DECADE NAVIGATION ========== */

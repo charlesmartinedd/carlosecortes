@@ -268,41 +268,41 @@ class DataLoader {
 class TimelineRenderer {
     constructor(svgElement) {
         this.svg = svgElement;
-        this.width = 400;
-        this.height = 800;
+        this.width = 1400;
+        this.height = 500;
     }
 
     render() {
-        // Vertical timeline - 1970s at top
-        const padding = { top: 60, bottom: 60 };
-        const timelineX = 120; // X position of the vertical line
-        const lineLength = this.height - padding.top - padding.bottom;
+        // Horizontal timeline - 1970s on left
+        const padding = { left: 100, right: 100 };
+        const timelineY = 200; // Y position of the horizontal line
+        const lineLength = this.width - padding.left - padding.right;
         const decadeSpacing = lineLength / (CONFIG.decades.length - 1);
 
-        // Update SVG viewBox for vertical layout
+        // Update SVG viewBox for horizontal layout
         this.svg.setAttribute('viewBox', `0 0 ${this.width} ${this.height}`);
 
-        // Draw vertical timeline line
-        this.drawVerticalLine(timelineX, padding.top, lineLength);
+        // Draw horizontal timeline line
+        this.drawHorizontalLine(padding.left, timelineY, lineLength);
 
-        // Draw decade markers (top to bottom, 1970s first)
+        // Draw decade markers (left to right, 1970s first)
         CONFIG.decades.forEach((decade, index) => {
-            const y = padding.top + (index * decadeSpacing);
-            this.drawDecadeMarker(timelineX, y, decade, index);
+            const x = padding.left + (index * decadeSpacing);
+            this.drawDecadeMarker(x, timelineY, decade, index);
         });
     }
 
-    drawVerticalLine(x, startY, length) {
+    drawHorizontalLine(startX, y, length) {
         const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line.setAttribute('x1', x);
-        line.setAttribute('y1', startY);
-        line.setAttribute('x2', x);
-        line.setAttribute('y2', startY + length);
+        line.setAttribute('x1', startX);
+        line.setAttribute('y1', y);
+        line.setAttribute('x2', startX + length);
+        line.setAttribute('y2', y);
         line.classList.add('timeline-line');
 
         this.svg.appendChild(line);
 
-        // Animate line drawing (top to bottom)
+        // Animate line drawing (left to right)
         line.style.strokeDasharray = length;
         line.style.strokeDashoffset = length;
 
@@ -342,21 +342,21 @@ class TimelineRenderer {
         text.classList.add('decade-marker-text');
         text.textContent = decade.key;
 
-        // Theme label (positioned to the right of marker)
+        // Theme label (positioned below marker)
         const theme = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-        theme.setAttribute('x', x + radius + 20);
-        theme.setAttribute('y', y - 8);
+        theme.setAttribute('x', x);
+        theme.setAttribute('y', y + radius + 30);
         theme.classList.add('decade-theme-text');
         theme.textContent = decade.theme;
 
-        // Works count badge (positioned to the right, below theme)
+        // Works count badge (positioned below theme)
         if (state.data?.decades?.[decade.key]) {
             const decadeData = state.data.decades[decade.key];
             const worksCount = decadeData.totalWorks || 0;
 
             const count = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-            count.setAttribute('x', x + radius + 20);
-            count.setAttribute('y', y + 12);
+            count.setAttribute('x', x);
+            count.setAttribute('y', y + radius + 50);
             count.classList.add('category-indicator');
             count.textContent = `${worksCount} works`;
             group.appendChild(count);
