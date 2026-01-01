@@ -429,8 +429,8 @@ class ModalManager {
             <div class="bio-modal-layout">
                 <!-- Sidebar with photo and stats -->
                 <div class="bio-sidebar">
-                    <div class="bio-photo-placeholder">
-                        <span class="initials">CEC</span>
+                    <div class="bio-photo-container">
+                        <img src="assets/images/carlos-cortes.jpg" alt="Dr. Carlos E. Cortés" class="bio-photo-img" onerror="this.parentElement.innerHTML='<div class=\\'bio-photo-placeholder\\'><span class=\\'initials\\'>CEC</span></div>'">
                     </div>
                     <div class="bio-stats">
                         <div class="bio-stat">
